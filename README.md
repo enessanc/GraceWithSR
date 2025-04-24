@@ -46,28 +46,6 @@ chmod +x run.sh
 
 İşlenmiş video `dataset/output/output_video.mp4` konumuna kaydedilecektir
 
-## Proje Yapısı
-
-```
-GraceWithSR/
-├── src/
-│   └── integration/
-│       └── pipeline/
-│           └── grace_sr3_pipeline.py
-├── external/
-│   ├── Grace/
-│   └── SR3/
-├── models/
-│   ├── Grace/
-│   └── SR3/
-├── dataset/
-│   ├── input/
-│   └── output/
-├── setup.sh
-├── run.sh
-└── requirements.txt
-```
-
 ## Notlar
 
 - İşlem hattı optimal performans için CUDA gerektirir ve Colab ortamında test edilmiştir. Her ortamda çalışmayabilir.
