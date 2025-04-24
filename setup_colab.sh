@@ -5,8 +5,8 @@ set -e
 
 echo "Setting up Grace-SR3 Pipeline environment for Google Colab..."
 
-# Install PyTorch with CUDA support
-pip install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 --index-url https://download.pytorch.org/whl/cu118
+# Install PyTorch with CUDA support (using latest stable version for Colab)
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
 # Install Grace core dependencies
 pip install \
@@ -46,5 +46,12 @@ pip install \
     tqdm \
     gdown==4.6.4
 
+# Create necessary directories
+mkdir -p external/Grace/results
+mkdir -p external/Grace/libs
+mkdir -p models/SR3
+mkdir -p results/SR3
+mkdir -p dataset/input
+mkdir -p dataset/output
 
 echo "Colab setup completed successfully!" 

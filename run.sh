@@ -44,7 +44,7 @@ if [ ! -f "external/Grace/models/128_freeze.model" ]; then
     exit 1
 fi
 
-if [ ! -f "models/SR3/SR3Model.pth" ]; then
+if [ ! -f "models/SR3Model/SR3Model.pth" ]; then
     echo "Error: SR3 model file (SR3Model.pth) not found!"
     exit 1
 fi
