@@ -1,52 +1,52 @@
-# GraceWithSR: Video Enhancement Pipeline
+# GraceWithSR: Video İyileştirme İşlem Hattı
 
-This project implements a video enhancement pipeline that combines Grace and SR3 models to improve video quality. The pipeline:
-1. Takes a 240p input video
-2. Downscales it to 128p
-3. Processes with Grace model (trained on 128p)
-4. Upscales back to 240p using SR3 model
+Bu proje, video kalitesini iyileştirmek için Grace ve SR3 modellerini birleştiren bir video iyileştirme işlem hattı uygular. İşlem hattı:
+1. 240p çözünürlüğünde bir giriş videosu alır
+2. 128p'ye küçültür
+3. Grace modeli ile işler (128p üzerinde eğitilmiş)
+4. SR3 modeli kullanarak tekrar 240p'ye yükseltir
 
-## Requirements
+## Gereksinimler
 
 - Python 3.7+
-- CUDA-capable GPU
+- CUDA destekli GPU
 - FFmpeg
 - Git
 
-## Installation
+## Kurulum
 
-1. Clone the repository:
+1. Depoyu klonlayın:
 ```bash
 git clone https://github.com/enessanc/GraceWithSR.git
 cd GraceWithSR
 ```
 
-2. Run the setup script:
+2. Kurulum betiğini çalıştırın:
 ```bash
 chmod +x setup.sh
 ./setup.sh
 ```
 
-This will:
-- Install system dependencies
-- Create a Python virtual environment
-- Install PyTorch with CUDA support
-- Install Grace and SR3 dependencies
-- Download required models
+Bu işlem:
+- Sistem bağımlılıklarını yükler
+- Python sanal ortamı oluşturur
+- CUDA desteği ile PyTorch'u yükler
+- Grace ve SR3 bağımlılıklarını yükler
+- Gerekli modelleri indirir
 
-## Usage
+## Kullanım
 
-1. Place your input video in `dataset/input/input_video.mp4`
+1. Giriş videonuzu `dataset/input/input_video.mp4` konumuna yerleştirin
 
-2. Run the pipeline:
+2. İşlem hattını çalıştırın:
 ```bash
 chmod +x run.sh
 ./run.sh
 ```
 
-The processed video will be saved to `dataset/output/output_video.mp4`
+İşlenmiş video `dataset/output/output_video.mp4` konumuna kaydedilecektir
 
-## Project Structure
+## Proje Yapısı
 
 ```
 GraceWithSR/
@@ -68,13 +68,13 @@ GraceWithSR/
 └── requirements.txt
 ```
 
-## Notes
+## Notlar
 
-- The pipeline requires CUDA for optimal performance
-- Input video should be 240p resolution
-- Grace model is trained on 128p images
-- SR3 model is trained for upscaling from 128p to 240p
+- İşlem hattı optimal performans için CUDA gerektirir
+- Giriş videosu 240p çözünürlüğünde olmalıdır
+- Grace modeli 128p görüntüler üzerinde eğitilmiştir
+- SR3 modeli 128p'den 240p'ye yükseltme için eğitilmiştir
 
-## License
+## Lisans
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+Bu proje MIT Lisansı altında lisanslanmıştır - detaylar için LICENSE dosyasına bakın. 

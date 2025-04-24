@@ -146,11 +146,6 @@ train_with_validation(
 )
 ```
 
-## Performans
-- PSNR: ~32.5 dB
-- SSIM: ~0.92
-- Eğitim Süresi: ~24 saat (NVIDIA RTX 3080)
-- Bellek Kullanımı: ~4GB VRAM
 
 ## Sonuçlar
 
