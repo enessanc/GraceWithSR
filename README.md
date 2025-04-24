@@ -70,11 +70,4 @@ GraceWithSR/
 
 ## Notlar
 
-- İşlem hattı optimal performans için CUDA gerektirir
-- Giriş videosu 240p çözünürlüğünde olmalıdır
-- Grace modeli 128p görüntüler üzerinde eğitilmiştir
-- SR3 modeli 128p'den 240p'ye yükseltme için eğitilmiştir
-
-## Lisans
-
-Bu proje MIT Lisansı altında lisanslanmıştır - detaylar için LICENSE dosyasına bakın. 
+- İşlem hattı optimal performans için CUDA gerektirir ve Colab ortamında test edilmiştir. Her ortamda çalışmayabilir.
