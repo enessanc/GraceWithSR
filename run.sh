@@ -68,7 +68,7 @@ python3 src/integration/pipeline/grace_sr3_pipeline.py \
     --input dataset/input_video.mp4
     --output dataset/output_video.mp4
     --grace_model external/Grace/models/128_freeze.model \
-    --sr3_model models/SR3/SR3Model.pth \
+    --sr3_model models/SR3Model/SR3Model.pth \
     $GPU_FLAG
 
 echo "Pipeline completed successfully!" 
